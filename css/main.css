@@ -1,0 +1,157 @@
+body {
+	font-family:'Open Sans', sans-serif;
+	background:#a2e6e5;
+	background:-moz-linear-gradient(top, #a2e6e5 40%, #a2c459 40%);
+	background:-webkit-linear-gradient(top, #a2e6e5 40%,#a2c459 40%);
+	background:linear-gradient(to bottom, #a2e6e5 40%,#a2c459 40%);
+	filter:progid:DXImageTransform.Microsoft.gradient( startColorstr='#a2e6e5', endColorstr='#a2c459',GradientType=0 );
+	height:100vh;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family:'Open Sans', sans-serif;
+	font-weight:400;
+	margin:0;
+}
+
+h1 {
+	font-size:4em;
+	font-weight:700;
+}
+
+h3 {
+	font-family:'Libre Baskerville', serif;
+	font-size:2em;
+}
+
+main {
+	background:url('../img/bg.png') no-repeat;
+	background-size:4000px 893px;
+	width:4000px; height:893px;
+	overflow:hidden;
+}
+
+/* INTRODUCTION */
+
+.intro {
+	padding:2em;
+}
+
+.intro h2 {
+	font-size:1.5em;
+	font-weight:300;
+}
+
+a {
+	color:#DE3625;
+}
+
+.directions {
+	position:absolute;
+	top:165px;
+	left:150px;
+	width:260px;
+	font-size:14px;
+	text-align:center;
+}
+
+.directions > div {
+	background:rgba(255,255,255,.95);
+	border:3px solid rgba(0,0,0,.2);
+	padding:30px;
+	border-radius:10px;
+}
+
+.directions .credit {
+	font-size:12px;
+}
+
+.directions p:last-child {
+	margin-bottom:0;
+}
+
+.directions .or {
+	font-family:'Libre Baskerville', serif;
+}
+
+
+/* RESUME BOX */
+
+.resumebox {
+	position:fixed;
+	left:20px; top:20px;
+	width:400px;
+	z-index:50;
+	max-height:585px;
+	overflow:auto;
+}
+
+.resumebox article {
+	background:rgba(255,255,255,.9);
+	border-top:4px solid rgba(0,0,0,.3);
+	border-bottom:4px solid rgba(0,0,0,.3);	
+	display:none;
+	padding:30px;
+	line-height:1.6;
+}
+
+.resumebox article > ul {
+	padding-left:20px;
+}
+
+.resumebox p { margin-bottom:0; }
+
+/* ROB */
+.rob {
+	background:url('../img/robwalk.png') -720px 0;
+	background-size:960px 222px;
+	width:120px; height:222px;
+	position:absolute;
+	left:10px; top:170px;
+}
+
+.rob.flippedx {
+	-moz-transform:scaleX(-1);
+    -webkit-transform:scaleX(-1);
+    transform:scaleX(-1);
+    filter:FlipH;
+    -ms-filter:"FlipH";
+}
+
+.rob.walking {
+	background-position:0 0;
+	animation:walk 600ms steps(6) infinite;
+}
+
+@keyframes walk {
+	100% {
+		background-position:-720px;
+	}
+}
+
+@keyframes walkflipped {
+	100% {
+		background-position:0;
+	}
+}
+
+/* SCENE PROPS */
+.objects img {
+	position:absolute;
+	left:0; top:0;
+	cursor:pointer;
+}
+
+#sign_bio { left:500px; top:370px; }
+#sign_ecommerce { left:856px; top:306px; }
+#sign_development { left:1245px; top:503px; }
+#sign_integration { left:1695px; top:558px; }
+#sign_skills { left:2228px; top:490px; }
+#sign_worksamples { left:2794px; top:614px; }
+#sign_workhistory { left:3243px; top:385px; }
+#sign_bold { left:3875px; top:400px; }
+
+#tree_1 { left:652px; top:614px; }
+#tree_2 { left:1497px; top:634px; }
+#tree_3 { left:1851px; top:470px; }
+#tree_4 { left:2492px; top:413px; }
